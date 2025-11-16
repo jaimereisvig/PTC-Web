@@ -1,0 +1,275 @@
+/* Estilos para la página de Temporadas y Episodios */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0a0a0f 100%);
+  color: #f0f0f5;
+  line-height: 1.6;
+}
+
+/* Header y navegación - reutilizado */
+header {
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #2a2a3e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img{
+  height: 4em;
+  width: 25em; 
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: #f0f0f5;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #d4af37;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d4af37;
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+  width: 100%;
+}
+
+/* Header de página */
+.page-header {
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  background: rgba(26, 26, 46, 0.3);
+}
+
+.page-header h1 {
+  font-family: "Orbitron", monospace;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #d4af37;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Contenido de temporadas */
+.temporada-cont {
+  padding: 3rem 0;
+}
+
+.bloque-cont {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.temporada-bloque {
+  margin-bottom: 4rem;
+  background: rgba(26, 26, 46, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #2a2a3e;
+}
+
+.temporada-header {
+  background: rgba(212, 175, 55, 0.1);
+  padding: 2rem;
+  border-bottom: 1px solid #2a2a3e;
+  z-index: 10
+}
+
+.temporada-header h2 {
+  font-family: "Orbitron", monospace;
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.temporada-info {
+  color: #a0a0b0;
+  font-size: 1.1rem;
+}
+
+/* Grid de episodios */
+.episodio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.episodio-card {
+  background: rgba(10, 10, 15, 0.6);
+  border: 1px solid #2a2a3e;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.episodio-card h3 {
+  font-family: "Orbitron", monospace;
+  color: #d4af37;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.episodio-card p {
+  color: #d0d0d5;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.episodio-link {
+  display: inline-block;
+  color: #4ade80;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.episodio-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Temporadas futuras */
+
+.contenido-futuro {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: rgba(26, 26, 46, 0.3);
+  overflow: hidden;
+}
+
+.contenido-futuro > p {
+  color: #d0d0d5;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.temporada-highlights,
+.reparto-nuevo {
+  background: rgba(26, 26, 46, 0.4);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.temporada-highlights h3,
+.reparto-nuevo h3 {
+  font-family: "Orbitron", monospace;
+  color: #4ade80;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.temporada-highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.temporada-highlights li {
+  color: #d0d0d5;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(42, 42, 62, 0.5);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.tempororada-highlights li:before {
+  content: "→";
+  color: #4ade80;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.temporada-highlights li:last-child {
+  border-bottom: none;
+}
+
+.reparto-nuevo p {
+  color: #d0d0d5;
+  line-height: 1.6;
+}
+
+.reaparto-nuevo strong {
+  color: #d4af37;
+}
+
+/* Footer */
+footer {
+  background: #0a0a0f;
+  border-top: 1px solid #2a2a3e;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.footer-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer-info,
+.footer-social {
+  text-align: center;
+}
+
+.footer-info p {
+  color: #a0a0b0;
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social a {
+  color: #a0a0b0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #4ade80;
+}
