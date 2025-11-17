@@ -12,64 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* Header y navegación - reutilizado */
-header {
-  background: rgba(10, 10, 15, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #2a2a3e;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo img{
-  height: 4em;
-  width: 25em; 
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-menu a {
-  color: #f0f0f5;
-  text-decoration: none;
-  font-weight: 500;
-  position: relative;
-}
-
-.nav-menu a:hover,
-.nav-menu a.active {
-  color: #d4af37;
-}
-
-.nav-menu a::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #d4af37;
-  transition: width 0.3s ease;
-}
-
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
-  width: 100%;
-}
-
 /* Header de página */
 .page-header {
   padding: 3rem 2rem 2rem;
@@ -164,10 +106,7 @@ nav {
   text-decoration: underline;
 }
 
-
-
 /* Temporadas futuras */
-
 .contenido-futuro {
   margin-bottom: 4rem;
   padding: 2rem;
@@ -231,45 +170,4 @@ nav {
 
 .reaparto-nuevo strong {
   color: #d4af37;
-}
-
-/* Footer */
-footer {
-  background: #0a0a0f;
-  border-top: 1px solid #2a2a3e;
-  padding: 2rem;
-  margin-top: 4rem;
-}
-
-.footer-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
-}
-
-.footer-info,
-.footer-social {
-  text-align: center;
-}
-
-.footer-info p {
-  color: #a0a0b0;
-  font-size: 0.9rem;
-}
-
-.footer-social {
-  display: flex;
-  gap: 2rem;
-}
-
-.footer-social a {
-  color: #a0a0b0;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-  color: #4ade80;
 }
