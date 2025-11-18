@@ -6,9 +6,11 @@
     <title>Sobre la Serie - El Problema de los Tres Cuerpos</title>
     <link rel="icon" type="image/png" href="../img/PTC_favicon.png">
     <link rel="stylesheet" href="../style/header-nav.css">
-    <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/sobre-la-serie.css">
+    <link rel="stylesheet" href="../style/reproductor-audio.css">
+    <link rel="stylesheet" href="../style/footer.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -102,6 +104,30 @@
             </div>
         </section>
     </main>
+
+        <!-- Reproductor de audio flotante -->
+    <input type="checkbox" id="player-toggle" class="player-toggle-checkbox">
+    
+    <!-- Ícono flotante cuando el reproductor está cerrado -->
+    <label for="player-toggle" class="player-icon">
+        <span class="icon-music">♪</span>
+    </label>
+
+    <!-- Reproductor de audio -->
+    <aside class="audio-player">
+        <div class="player-header">
+            <span class="player-title">Soundtrack</span>
+            <label for="player-toggle" class="close-button">✕</label>
+        </div>
+
+        <div class="player-body">
+            <h5>Repent</h5>
+            <!-- Controles de audio nativos -->
+            <audio controls loop class="audio-controls" id="audio-player">
+                <source src="../music/Repent.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </aside>
 
     <footer>
         <div class="footer-cont">

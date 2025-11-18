@@ -6,17 +6,17 @@
 /* Ícono flotante minimizado */
 .player-icon {
   position: fixed;
-  bottom: 140px;
-  right: 210px;
+  bottom: 10%;
+  right: 10%;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #d4af37, #b8941f);
+  background: linear-gradient(135deg, #1e5b17, #151515);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 15px rgba(68, 212, 55, 0.4);
   transition: all 0.3s ease;
   z-index: 999;
   opacity: 1;
@@ -24,7 +24,7 @@
 
 .player-icon:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+  box-shadow: 0 6px 20px rgba(81, 212, 55, 0.6);
 }
 
 .icon-music {
@@ -36,8 +36,8 @@
 /* Reproductor de audio flotante */
 .audio-player {
   position: fixed;
-  bottom: 100px;
-  right: 100px;
+  bottom: 10%;
+  right: 10%;
   width: 280px;
   background: rgba(15, 23, 41, 0.98);
   border: 1px solid #d4af37;
