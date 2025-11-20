@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap");
-
 :root {
   --color-bg-primary: #0a0a0a;
   --color-bg-secondary: #0f1729;
@@ -31,7 +29,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem;
+  padding-top: 4rem;
 }
 
 .error-contenedor {
@@ -44,27 +42,6 @@ main {
   flex-direction: column;
   gap: 3rem;
   align-items: center;
-}
-
-.error-imagen {
-  width: 1200px;
-  height: 400px;
-  margin-left: 20rem;
-  border: 3px solid var(--color-danger-red);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 40px rgba(255, 0, 51, 0.4);
-  animation: pulse-border 2s infinite;
-}
-
-@keyframes pulse-border {
-  0%,
-  100% {
-    box-shadow: 0 0 40px rgba(255, 0, 51, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 60px rgba(255, 0, 51, 0.6);
-  }
 }
 
 .error-mensaje {
@@ -181,4 +158,12 @@ main {
   color: var(--color-bg-primary);
   transform: translateY(-2px);
   box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+.error-imagen {
+  width: 900px;
+  height: 400px;
+  margin-top: 4rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent, black 30%,black 100%, transparent);
 }

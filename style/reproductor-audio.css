@@ -74,14 +74,14 @@
   border-radius: 10px 10px 0 0;
 }
 
-.player-title {
+.player-titulo {
   font-family: "Orbitron", monospace;
   font-size: 0.9rem;
   font-weight: 600;
   color: #d4af37;
 }
 
-.close-button {
+.close-btn {
   font-size: 1.2rem;
   color: #f0f0f5;
   cursor: pointer;
@@ -89,17 +89,17 @@
   line-height: 1;
 }
 
-.close-button:hover {
+.close-btn:hover {
   color: #d4af37;
 }
 
 /* Body del reproductor */
-.player-body {
+.player-cuerpo {
   padding: 1rem;
 }
 
 /* Selectores de track ocultos */
-.player-body h5 {
+.player-cuerpo h5 {
   font-family: "Orbotron", Monospace;
   color: #00ff88;
   text-align: center;
@@ -107,19 +107,19 @@
 }
 
 /* Controles de audio nativos */
-.audio-controls {
+.audio-controles {
   width: 100%;
   height: 40px;
   margin-bottom: 0.75rem;
   border-radius: 5px;
 }
 
-.audio-controls::-webkit-media-controls-panel {
+.audio-controles::-webkit-media-controls-panel {
   background: rgba(26, 26, 46, 0.8);
 }
 
-.audio-controls::-webkit-media-controls-play-button,
-.audio-controls::-webkit-media-controls-mute-button {
+.audio-controles::-webkit-media-controls-play-button,
+.audio-controles::-webkit-media-controls-mute-button {
   background-color: #d4af37;
   border-radius: 50%;
 }

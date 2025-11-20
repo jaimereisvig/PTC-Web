@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elenco - El Problema de los Tres Cuerpos</title>
     <link rel="icon" type="image/png" href="../img/PTC_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/header-nav.css">
     <link rel="stylesheet" href="../style/elenco.css">
     <link rel="stylesheet" href="../style/reproductor-audio.css">
@@ -25,7 +26,7 @@
                 <li><a href="../html/temporadas.html">Temporadas</a></li>
                 <li><a href="../html/curiosidades.html">Curiosidades</a></li>
                 <li><a href="../html/mantenimiento.html">Trisolarianos</a></li>
-                <li><a href="../html/error-404.html">Invasión</a></li>
+                <li><a href="../html/404.html">Invasión</a></li>
                 <li><a href="../html/contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -133,25 +134,18 @@
         </section>
     </main>
 
-    <!-- Reproductor de audio flotante -->
     <input type="checkbox" id="player-toggle" class="player-toggle-checkbox">
-    
-    <!-- Ícono flotante cuando el reproductor está cerrado -->
     <label for="player-toggle" class="player-icon">
         <span class="icon-music">♪</span>
     </label>
-
-    <!-- Reproductor de audio -->
     <aside class="audio-player">
         <div class="player-header">
-            <span class="player-title">Soundtrack</span>
-            <label for="player-toggle" class="close-button">✕</label>
+            <span class="player-titulo">Soundtrack</span>
+            <label for="player-toggle" class="close-btn">✕</label>
         </div>
-
-        <div class="player-body">
-            <h5>Chaotic or Stable</h5>
-            <!-- Controles de audio nativos -->
-            <audio controls loop class="audio-controls" id="audio-player">
+        <div class="player-cuerpo">
+            <h5>Tema de apertura de la serie</h5>
+            <audio controls loop class="audio-controles" id="audio-player">
                 <source src="../music/Chaotic-or-Stable.mp3" type="audio/mpeg">
             </audio>
         </div>
