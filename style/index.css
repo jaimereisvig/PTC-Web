@@ -14,8 +14,8 @@ body {
 
 /* Sección hero */
 .hero {
-  padding: 4rem 2rem;
-  max-width: 1200px;
+  padding: 5rem 2rem;
+  max-width: 75%;
   margin: 0 auto;
 }
 

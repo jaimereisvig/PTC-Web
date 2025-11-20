@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap");
+
+:root {
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #0f1729;
+  --color-accent-gold: #d4af37;
+  --color-accent-silver: #c0c0c0;
+  --color-accent-green: #00ff88;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b0b0b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.mantenimiento-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.mantenimiento-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.mantenimiento-imagen {
+  width: 1200px;
+  height: 400px;
+  margin-left: 20rem;
+  border: 3px solid var(--color-accent-gold);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+}
+
+.mantenimiento-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mantenimiento-mensaje {
+  background-color: var(--color-bg-secondary);
+  margin-left: 20rem;
+  padding: 3rem;
+  border-radius: 10px;
+  border: 2px solid var(--color-accent-gold);
+  text-align: center;
+  max-width: 1200px;
+}
+
+.mantenimiento-mensaje h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-accent-gold);
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.mensaje-cont {
+  text-align: left;
+}
+
+.message-cont p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-secondary);
+}
+
+.estado-info {
+  background-color: rgba(212, 175, 55, 0.1);
+  border-left: 4px solid var(--color-accent-gold);
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.estado-label {
+  font-weight: 600;
+  color: var(--color-accent-gold);
+  margin-bottom: 0.5rem;
+}
+
+.estado-msg {
+  font-size: 1.2rem;
+  color: var(--color-accent-green);
+  margin-bottom: 0;
+}
+
+.declaimer {
+  font-style: italic;
+  color: var(--color-accent-silver);
+  margin-top: 2rem;
+}
+
+.return-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--color-accent-gold);
+  color: var(--color-bg-primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.return-btn:hover {
+  background-color: var(--color-accent-green);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4);
+}
