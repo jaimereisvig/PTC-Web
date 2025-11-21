@@ -56,8 +56,8 @@ body {
 }
 
 .contact-seccion {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
   margin-bottom: 4rem;
 }
@@ -79,6 +79,18 @@ body {
   border: 1px solid #2a2a3e;
   border-radius: 15px;
   padding: 2rem;
+}
+
+/* Agregando estilos para la fila de nombre y apellido */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-bottom: 0;
 }
 
 .form-group {
@@ -123,9 +135,15 @@ body {
   min-height: 120px;
 }
 
+.form-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .submit-btn {
-  width: 100%;
-  padding: 1rem;
+  max-width: 300px;
+  padding: 1rem 2rem;
   background: linear-gradient(135deg, #d4af37, #c0a030);
   color: #0a0a0f;
   border: none;
@@ -146,47 +164,9 @@ body {
   transform: translateY(0);
 }
 
-.form-placeholder {
-  background: rgba(26, 26, 46, 0.4);
-  border: 2px dashed #4ade80;
-  border-radius: 15px;
-  padding: 3rem;
-  text-align: center;
-}
-
-.placeholder-content {
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-.placeholder-icon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  filter: grayscale(1);
-}
-
-.placeholder-content h3 {
-  font-family: "Orbitron", monospace;
-  color: #4ade80;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.placeholder-content p {
-  color: #d0d0d5;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
 /* Información adicional */
 .info-adicional {
   margin-top: 4rem;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
 }
 
 .info-card {
@@ -199,7 +179,7 @@ body {
 
 .info-card h3 {
   font-family: "Orbitron", monospace;
-  color: #c0c0c0;
+  color: #d4af37;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
