@@ -42,23 +42,6 @@ main {
   align-items: center;
 }
 
-.mantenimiento-imagen {
-  width: 1200px;
-  height: 400px;
-  margin-left: 20rem;
-  border: 3px solid var(--color-accent-gold);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
-}
-
-.mantenimiento-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
 .mantenimiento-mensaje {
   background-color: var(--color-bg-secondary);
   margin-left: 20rem;
@@ -130,7 +113,16 @@ main {
 }
 
 .return-btn:hover {
-  background-color: var(--color-accent-green);
+  background-color: var(--color-accent-gold);
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4);
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
 }
+
+.mantenimiento-imagen {
+  width: 900px;
+  height: 400px;
+  margin-top: 4rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent, black 30%,black 100%, transparent);
+}
+
