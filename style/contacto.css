@@ -287,7 +287,7 @@ body {
         margin-bottom: 1.5rem;
     }
 
-    /* Campos de nombre y apellido en columna */
+    /* Campos de nombre y apellido en columna 
     .form-row {
         flex-direction: column;
         gap: 0;
@@ -316,7 +316,7 @@ body {
         max-width: none;
         padding: 0.9rem 1.5rem;
         font-size: 0.95rem;
-    }
+    }*/
 
     .info-adicional {
         margin-top: 2rem;
@@ -361,13 +361,22 @@ body {
     .social-seccion h2 {
         font-size: 1.1rem;
     }
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+/* Campos de nombre y apellido en columna*/
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row {
+        margin-bottom: 1.5rem;
+    }
 
     .contact-form {
         padding: 1rem;
-    }
-
-    .form-group {
-        margin-bottom: 1.25rem;
     }
 
     .form-group label {
@@ -384,7 +393,9 @@ body {
         min-height: 100px;
     }
 
-    .submit-btn {
+        .submit-btn {
+        width: 100%;
+        max-width: none;
         padding: 0.85rem 1.25rem;
         font-size: 0.9rem;
     }
