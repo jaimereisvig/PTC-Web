@@ -10,7 +10,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; 
   align-items: center;
   padding: 1rem 2rem;
   max-width: 1200px;
@@ -132,9 +132,9 @@ nav {
     /* Contenedor nav como referencia para posicionamiento */
     nav {
         position: relative;
-        padding: 1rem;
+        padding: 1rem 1.5rem; /* <CHANGE> mas padding lateral para separar de bordes */
     }
-
+    
     /* Mostrar boton hamburguesa */
     .menu-hamburguesa {
         display: block;
@@ -201,9 +201,9 @@ nav {
 /* --- CELULAR PEQUENO (480px o menos) --- */
 @media screen and (max-width: 480px) {
     nav {
-        padding: 0.75rem;
+        padding: 0.75rem 1rem; /* <CHANGE> mantener padding lateral */
     }
-
+    
     .logo img {
         height: 2em;
         width: 6.5em;

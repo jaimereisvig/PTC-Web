@@ -47,15 +47,15 @@ main {
 
 .mantenimiento-mensaje {
     background-color: var(--color-bg-secondary);
-    margin-left: auto; /* <CHANGE> centrar horizontalmente */
-    margin-right: auto; /* <CHANGE> centrar horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
     padding: 3rem;
     border-radius: 10px;
     border: 2px solid var(--color-accent-gold);
     text-align: center;
-    max-width: 900px; /* <CHANGE> reducir ancho maximo */
-    width: 100%; /* <CHANGE> agregar ancho relativo */
-    box-sizing: border-box; /* <CHANGE> evitar desborde */
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .mantenimiento-mensaje h1 {
