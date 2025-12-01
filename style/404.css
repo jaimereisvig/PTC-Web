@@ -34,9 +34,11 @@ main {
 }
 
 .error-contenedor {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 1rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .error-contenido {
@@ -47,15 +49,16 @@ main {
 }
 
 .error-mensaje {
-  background-color: var(--color-bg-secondary);
-  margin-left: 20rem;
-  padding: 3rem;
-  border-radius: 10px;
-  border: 2px solid var(--color-danger-red);
-  text-align: center;
-  max-width: 1200px;
-  width: 100%;
-  box-sizing: border-box;
+    background-color: var(--color-bg-secondary);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    border-radius: 10px;
+    border: 2px solid var(--color-danger-red);
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .error-code {
@@ -165,12 +168,19 @@ main {
 }
 
 .error-imagen {
-  width: 900px;
-  max-width: 100%;
-  height: 400px;
-  margin-top: 4rem;
-  overflow: hidden;
-  mask-image: linear-gradient(to bottom, transparent, black 30%,black 100%, transparent);
+    width: 100%; 
+    max-width: 900px;
+    height: 400px;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto; 
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, transparent, black 30%,black 100%, transparent);
+}
+.error-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* -------------------------------------------- */
