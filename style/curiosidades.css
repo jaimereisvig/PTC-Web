@@ -181,3 +181,183 @@ body {
   color: #22c55e;
   text-decoration: underline;
 }
+
+/* --------------------------------------------
+   MEDIA QUERIES - RESPONSIVE CURIOSIDADES
+   -------------------------------------------- */
+
+/* --- TABLET (1024px o menos) --- */
+@media screen and (max-width: 1024px) {
+    .page-header {
+        padding: 2rem 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .bloque-cont h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .evento-date {
+        padding: 1.5rem;
+        min-width: 100px;
+    }
+
+    .evento-date .day {
+        font-size: 1.6rem;
+    }
+
+    .evento-content {
+        padding: 1.5rem;
+    }
+
+    .evento-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .curiosidades-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .curiosidades-card {
+        padding: 1.5rem;
+    }
+}
+
+/* --- CELULAR (768px o menos) --- */
+@media screen and (max-width: 768px) {
+    .page-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .evento {
+        padding: 2rem 0;
+    }
+
+    .bloque-cont {
+        padding: 0 1rem;
+    }
+
+    .bloque-cont h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .evento-list {
+        gap: 1.5rem;
+    }
+
+    /* Evento-item: cambiar a columna en movil */
+    .evento-item {
+        flex-direction: column;
+    }
+
+    .evento-date {
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 1rem;
+        min-width: auto;
+    }
+
+    .evento-date .day {
+        font-size: 1.4rem;
+    }
+
+    .evento-date .month,
+    .evento-date .year {
+        font-size: 0.85rem;
+    }
+
+    .evento-content {
+        padding: 1.25rem;
+    }
+
+    .evento-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .evento-content p {
+        font-size: 0.95rem;
+    }
+
+    .curiosidades-section {
+        padding: 2rem 0;
+    }
+
+    .curiosidades-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .curiosidades-card {
+        padding: 1.25rem;
+        text-align: left;
+    }
+
+    .curiosidades-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .curiosidades-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* --- CELULAR PEQUENO (480px o menos) --- */
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .bloque-cont {
+        padding: 0 0.75rem;
+    }
+
+    .bloque-cont h2 {
+        font-size: 1.3rem;
+    }
+
+    .evento-date {
+        padding: 0.75rem;
+    }
+
+    .evento-date .day {
+        font-size: 1.2rem;
+    }
+
+    .evento-content {
+        padding: 1rem;
+    }
+
+    .evento-content h3 {
+        font-size: 1rem;
+    }
+
+    .evento-content p {
+        font-size: 0.9rem;
+    }
+
+    .curiosidades-card {
+        padding: 1rem;
+    }
+
+    .curiosidades-card h3 {
+        font-size: 1rem;
+    }
+
+    .curiosidades-card p {
+        font-size: 0.9rem;
+    }
+}

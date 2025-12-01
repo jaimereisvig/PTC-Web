@@ -168,6 +168,162 @@ body {
   line-height: 1.6;
 }
 
-.reaparto-nuevo strong {
+.reparto-nuevo strong {
   color: #d4af37;
 }
+/* --------------------------------------------
+               MEDIA QUERIES
+   -------------------------------------------- */
+
+/* --- TABLET (1024px o menos) --- */
+@media screen and (max-width: 1024px) {
+    .page-header {
+        padding: 2rem 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .temporada-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .episodio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+        padding: 1.5rem;
+    }
+
+    .episodio-card {
+        padding: 1.25rem;
+    }
+
+    .contenido-futuro {
+        padding: 1.5rem;
+    }
+}
+
+/* --- CELULAR (768px o menos) --- */
+@media screen and (max-width: 768px) {
+    .page-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .temporada-cont {
+        padding: 2rem 0;
+    }
+
+    .bloque-cont {
+        padding: 0 1rem;
+    }
+
+    .temporada-bloque {
+        margin-bottom: 2.5rem;
+    }
+
+    .temporada-header {
+        padding: 1.25rem;
+    }
+
+    .temporada-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .temporada-info {
+        font-size: 1rem;
+    }
+
+    .episodio-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .episodio-card {
+        padding: 1rem;
+    }
+
+    .episodio-card h3 {
+        font-size: 1rem;
+    }
+
+    .episodio-card p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .contenido-futuro {
+        padding: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contenido-futuro > p {
+        font-size: 1rem;
+    }
+
+    .temporada-highlights,
+    .reparto-nuevo {
+        padding: 1rem;
+    }
+
+    .temporada-highlights h3,
+    .reparto-nuevo h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* --- CELULAR PEQUENO (480px o menos) --- */
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .bloque-cont {
+        padding: 0 0.75rem;
+    }
+
+    .temporada-header {
+        padding: 1rem;
+    }
+
+    .temporada-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .temporada-info {
+        font-size: 0.9rem;
+    }
+
+    .episodio-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .episodio-card p {
+        font-size: 0.85rem;
+    }
+
+    .episodio-link {
+        font-size: 0.9rem;
+    }
+
+    .contenido-futuro {
+        padding: 1rem;
+    }
+
+    .contenido-futuro > p {
+        font-size: 0.9rem;
+    }
+
+    .temporada-highlights li {
+        font-size: 0.9rem;
+    }
+}       
