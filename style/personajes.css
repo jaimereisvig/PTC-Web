@@ -91,3 +91,110 @@ body {
   line-height: 1.7;
   text-align: justify;
 }
+/* --------------------------------------------
+                 MEDIA QUERIES
+   -------------------------------------------- */
+
+/* --- TABLET (1024px o menos) --- */
+@media screen and (max-width: 1024px) {
+    .page-header {
+        padding: 2rem 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .personaje-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .personaje-img {
+        height: 250px;
+    }
+
+    .personaje-info {
+        padding: 1.5rem;
+    }
+
+    .personaje-info h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* --- CELULAR (768px o menos) --- */
+@media screen and (max-width: 768px) {
+    .page-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .personaje-grid {
+        padding: 2rem 0;
+    }
+
+    .bloque-cont {
+        padding: 0 1rem;
+    }
+
+    .personaje-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .personaje-img {
+        height: 220px;
+    }
+
+    .personaje-info {
+        padding: 1.25rem;
+    }
+
+    .personaje-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .personaje-info p {
+        font-size: 0.95rem;
+    }
+}
+
+/* --- CELULAR PEQUENO (480px o menos) --- */
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .bloque-cont {
+        padding: 0 0.75rem;
+    }
+
+    .personaje-img {
+        height: 200px;
+    }
+
+    .personaje-info {
+        padding: 1rem;
+    }
+
+    .personaje-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .actor-link {
+        font-size: 0.9rem;
+    }
+
+    .personaje-info p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
