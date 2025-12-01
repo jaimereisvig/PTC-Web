@@ -38,3 +38,68 @@ footer {
 .footer-social a:hover {
   color: #4ade80;
 }
+
+/* -------------------------------------------- */
+/*                 MEDIA QUERIES                */
+/* -------------------------------------------- */
+
+/* --- TABLET (1024px o menos) --- */
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .footer-social {
+        gap: 1.5rem;
+    }
+}
+
+/* --- CELULAR (768px o menos) --- */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 1.5rem 1rem;
+        margin-top: 2.5rem;
+    }
+
+    .footer-cont {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-info p {
+        font-size: 0.85rem;
+    }
+
+    .footer-social {
+        gap: 1.5rem;
+    }
+
+    .footer-social a {
+        font-size: 0.9rem;
+    }
+}
+
+/* --- CELULAR PEQUENO (480px o menos) --- */
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 1.25rem 0.75rem;
+        margin-top: 2rem;
+    }
+
+    .footer-cont {
+        gap: 0.75rem;
+    }
+
+    .footer-info p {
+        font-size: 0.8rem;
+    }
+
+    .footer-social {
+        gap: 1rem;
+    }
+
+    .footer-social a {
+        font-size: 0.85rem;
+    }
+}
