@@ -182,9 +182,9 @@ body {
   text-decoration: underline;
 }
 
-/* --------------------------------------------
-   MEDIA QUERIES - RESPONSIVE CURIOSIDADES
-   -------------------------------------------- */
+/* -------------------------------------------- */
+/*                 MEDIA QUERIES                */
+/* -------------------------------------------- */
 
 /* --- TABLET (1024px o menos) --- */
 @media screen and (max-width: 1024px) {

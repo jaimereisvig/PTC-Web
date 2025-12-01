@@ -201,3 +201,203 @@ body {
   color: #22c55e;
   text-decoration: underline;
 }
+
+/* -------------------------------------------- */
+/*                 MEDIA QUERIES                */
+/* -------------------------------------------- */
+
+/* --- TABLET (1024px o menos) --- */
+@media screen and (max-width: 1024px) {
+    .page-header {
+        padding: 2rem 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .contenido-bloque {
+        padding: 0 1.5rem;
+    }
+
+    .contact-intro {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-intro p {
+        font-size: 1rem;
+    }
+
+    .contact-seccion {
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .form-seccion h2,
+    .social-seccion h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .info-adicional {
+        margin-top: 3rem;
+    }
+}
+
+/* --- CELULAR (768px o menos) --- */
+@media screen and (max-width: 768px) {
+    .page-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .contact-contenido {
+        padding: 2rem 0;
+    }
+
+    .contenido-bloque {
+        padding: 0 1rem;
+    }
+
+    .contact-intro {
+        padding: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-intro p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .contact-seccion {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .form-seccion h2,
+    .social-seccion h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Campos de nombre y apellido en columna */
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 1.25rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        max-width: none;
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .info-adicional {
+        margin-top: 2rem;
+    }
+
+    .info-card {
+        padding: 1.5rem;
+    }
+
+    .info-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .info-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* --- CELULAR PEQUENO (480px o menos) --- */
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .contenido-bloque {
+        padding: 0 0.75rem;
+    }
+
+    .contact-intro {
+        padding: 1rem;
+    }
+
+    .contact-intro p {
+        font-size: 0.9rem;
+    }
+
+    .form-seccion h2,
+    .social-seccion h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.65rem 0.85rem;
+        font-size: 0.9rem;
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+    }
+
+    .submit-btn {
+        padding: 0.85rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .info-card {
+        padding: 1.25rem;
+    }
+
+    .info-card h3 {
+        font-size: 1rem;
+    }
+
+    .info-card p {
+        font-size: 0.9rem;
+    }
+}

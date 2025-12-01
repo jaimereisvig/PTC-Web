@@ -142,3 +142,158 @@ body {
 .ficha-cards strong {
   color: #d4af37;
 }
+
+/* -------------------------------------------- */
+/*                 MEDIA QUERIES                */
+/* -------------------------------------------- */
+
+/* --- TABLET (1024px o menos) --- */
+@media screen and (max-width: 1024px) {
+    .page-header {
+        padding: 2rem 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .bloque-cont {
+        padding: 0 1.5rem;
+    }
+
+    .bloque-cont h2 {
+        font-size: 1.6rem;
+    }
+
+    .sinopsis,
+    .trailer,
+    .produccion,
+    .ficha-tecnica {
+        padding: 2rem 0;
+    }
+
+    .video-container {
+        max-width: 100%;
+    }
+
+    .ficha-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .ficha-cards h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* --- CELULAR (768px o menos) --- */
+@media screen and (max-width: 768px) {
+    .page-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .bloque-cont {
+        padding: 0 1rem;
+    }
+
+    .bloque-cont h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sinopsis,
+    .trailer,
+    .produccion,
+    .ficha-tecnica {
+        padding: 1.5rem 0;
+    }
+
+    .sinopsis p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .produccion-info {
+        gap: 1.5rem;
+    }
+
+    .produccion-item h3 {
+        font-size: 1.15rem;
+    }
+
+    .produccion-item p {
+        font-size: 0.95rem;
+    }
+
+    .ficha-cards {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .ficha-cards {
+        padding: 1.5rem;
+    }
+
+    .ficha-cards h3 {
+        font-size: 1.05rem;
+    }
+
+    .ficha-cards p {
+        font-size: 0.95rem;
+    }
+}
+
+/* --- CELULAR PEQUENO (480px o menos) --- */
+@media screen and (max-width: 480px) {
+    .page-header {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .bloque-cont {
+        padding: 0 0.75rem;
+    }
+
+    .bloque-cont h2 {
+        font-size: 1.25rem;
+    }
+
+    .sinopsis,
+    .trailer,
+    .produccion,
+    .ficha-tecnica {
+        padding: 1.25rem 0;
+    }
+
+    .sinopsis p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .produccion-item h3 {
+        font-size: 1.05rem;
+    }
+
+    .produccion-item p {
+        font-size: 0.9rem;
+    }
+
+    .ficha-cards {
+        padding: 1.25rem;
+    }
+
+    .ficha-cards h3 {
+        font-size: 1rem;
+    }
+
+    .ficha-cards p {
+        font-size: 0.9rem;
+    }
+}
