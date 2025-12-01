@@ -69,3 +69,87 @@ body {
 .intro {
   margin: 2rem 0 1rem;
 }
+
+/* --------------------------------------------
+               MEDIA QUERIES HERO
+   -------------------------------------------- */
+
+/* --- TABLET (1024px o menos) --- */
+@media screen and (max-width: 1024px) {
+    .hero {
+        max-width: 90%;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-cont {
+        gap: 2rem;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .hero-imagen {
+        max-width: 350px;
+    }
+}
+
+/* --- CELULAR (768px o menos) --- */
+@media screen and (max-width: 768px) {
+    .hero {
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-cont {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .hero-texto {
+        min-width: auto;
+        order: 2;
+    }
+
+    .hero-imagen {
+        order: 1;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .hero-texto h1 {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+}
+
+/* --- CELULAR PEQUENO (480px o menos) --- */
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero-texto h1 {
+        font-size: 1.6rem;
+    }
+
+    .subtitulo {
+        font-size: 0.95rem;
+    }
+
+    .hero-imagen {
+        max-width: 220px;
+    }
+
+    .intro {
+        margin: 1rem 0 0.5rem;
+    }
+}
