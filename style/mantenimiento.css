@@ -31,8 +31,11 @@ main {
 }
 
 .mantenimiento-container {
-  max-width: 1200px;
-  width: 100%;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .mantenimiento-contenido {
@@ -43,13 +46,16 @@ main {
 }
 
 .mantenimiento-mensaje {
-  background-color: var(--color-bg-secondary);
-  margin-left: 20rem;
-  padding: 3rem;
-  border-radius: 10px;
-  border: 2px solid var(--color-accent-gold);
-  text-align: center;
-  max-width: 1200px;
+    background-color: var(--color-bg-secondary);
+    margin-left: auto; /* <CHANGE> centrar horizontalmente */
+    margin-right: auto; /* <CHANGE> centrar horizontalmente */
+    padding: 3rem;
+    border-radius: 10px;
+    border: 2px solid var(--color-accent-gold);
+    text-align: center;
+    max-width: 900px; /* <CHANGE> reducir ancho maximo */
+    width: 100%; /* <CHANGE> agregar ancho relativo */
+    box-sizing: border-box; /* <CHANGE> evitar desborde */
 }
 
 .mantenimiento-mensaje h1 {
@@ -119,10 +125,154 @@ main {
 }
 
 .mantenimiento-imagen {
-  width: 900px;
-  height: 400px;
-  margin-top: 4rem;
-  overflow: hidden;
-  mask-image: linear-gradient(to bottom, transparent, black 30%,black 100%, transparent);
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, transparent, black 30%,black 100%, transparent);
 }
 
+.mantenimiento-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -------------------------------------------- */
+/*                 MEDIA QUERIES                */
+/* -------------------------------------------- */
+
+/* --- TABLET (1024px o menos) --- */
+@media screen and (max-width: 1024px) {
+    .mantenimiento-contenido {
+        gap: 2rem;
+    }
+
+    .mantenimiento-mensaje {
+        padding: 2.5rem;
+    }
+
+    .mantenimiento-mensaje h1 {
+        font-size: 2rem;
+    }
+
+    .mensaje-cont p {
+        font-size: 1rem;
+    }
+
+    .estado-info {
+        padding: 1.25rem;
+    }
+
+    .mantenimiento-imagen {
+        height: 350px;
+        margin-top: 3rem;
+    }
+}
+
+/* --- CELULAR (768px o menos) --- */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    .mantenimiento-contenido {
+        gap: 1.5rem;
+    }
+
+    .mantenimiento-mensaje {
+        padding: 1.5rem;
+    }
+
+    .mantenimiento-mensaje h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+    }
+
+    .mensaje-cont p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    .estado-info {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .estado-label {
+        font-size: 0.95rem;
+    }
+
+    .estado-msg {
+        font-size: 1rem;
+    }
+
+    .declaimer {
+        font-size: 0.9rem;
+        margin-top: 1.5rem;
+    }
+
+    .return-btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .mantenimiento-imagen {
+        height: 250px;
+        margin-top: 2rem;
+    }
+}
+
+/* --- CELULAR PEQUENO (480px o menos) --- */
+@media screen and (max-width: 480px) {
+    main {
+        padding: 1rem 0.75rem;
+    }
+
+    .mantenimiento-mensaje {
+        padding: 1.25rem;
+    }
+
+    .mantenimiento-mensaje h1 {
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .mensaje-cont p {
+        font-size: 0.9rem;
+    }
+
+    .estado-info {
+        padding: 0.85rem;
+    }
+
+    .estado-label {
+        font-size: 0.9rem;
+    }
+
+    .estado-msg {
+        font-size: 0.95rem;
+    }
+
+    .declaimer {
+        font-size: 0.85rem;
+    }
+
+    .return-btn {
+        padding: 0.85rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .mantenimiento-imagen {
+        height: 180px;
+        margin-top: 1.5rem;
+    }
+}
