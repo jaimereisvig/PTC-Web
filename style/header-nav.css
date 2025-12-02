@@ -3,10 +3,8 @@ header {
   background: rgba(10, 10, 15, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #2a2a3e;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  overflow-x: hidden;
+  position: relative;
+  z-index: 1000;
 }
 
 nav {
@@ -32,6 +30,7 @@ nav {
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: flex-end; 
+  z-index: 1000; /* <CHANGE> asegurar que menu este por encima del contenido */
 }
 
 .nav-menu a {
@@ -115,8 +114,8 @@ nav {
 /*                 MEDIA QUERIES                */
 /* -------------------------------------------- */
 
-/* --- TABLET (1024px o menos) --- */
-@media screen and (max-width: 1024px) {
+/* --- TABLET (entre 769px y 1024px) --- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     nav {
         padding: 1rem 1.5rem;
     }
@@ -134,9 +133,8 @@ nav {
         height: 2.5em;
         width: 8em;
     }
-}
-
-/* --- CELULAR (768px o menos) --- */
+    
+}/* --- CELULAR (768px o menos) --- */
 @media screen and (max-width: 768px) {
     /* Contenedor nav como referencia para posicionamiento */
     nav {
