@@ -106,7 +106,7 @@ body {
     }
 
     .personaje-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: auto auto;
         gap: 1.5rem;
     }
 
@@ -141,13 +141,8 @@ body {
         padding: 0 1rem;
     }
 
-    .personaje-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
     .personaje-img {
-        height: 500px;
+        height: 300px;
     }
 
     .personaje-info {
@@ -176,6 +171,11 @@ body {
     .bloque-cont {
         padding: 0 0.75rem;
     }
+
+    .personaje-container {
+        grid-template-columns: auto;
+    }
+
 
     .personaje-img {
         height: 300px;
