@@ -1,4 +1,3 @@
-/* Estilos para la página Sobre la Serie */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   background: linear-gradient(135deg, var(--color-background-primary) 0%, var(--color-background-secondary) 50%, var(--color-background-primary) 100%); 
   color: var(--color-text-primary); 
   line-height: 1.6;
@@ -20,7 +19,7 @@ body {
 }
 
 .page-header h3 {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   font-size: var(--font-size-h2); 
   font-weight: 700;
   color: var(--color-accent-gold); 
@@ -35,7 +34,7 @@ body {
 }
 
 .bloque-cont h2 {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   font-size: var(--font-size-h2);
   color: var(--color-accent-gold);
   margin-bottom: 2rem;
@@ -95,7 +94,7 @@ body {
 }
 
 .produccion-item h3 {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   color: var(--color-accent-gold);
   font-size: 1.3rem;
   margin-bottom: 1rem;
@@ -126,7 +125,7 @@ body {
 }
 
 .ficha-card h3 {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   color: var(--color-accent-gold);
   font-size: 1.2rem;
   margin-bottom: 1rem;

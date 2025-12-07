@@ -74,7 +74,7 @@
 }
 
 .player-titulo {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   font-size: var(--font-size-small);
   font-weight: 600;
   color: var(--color-accent-gold);
@@ -98,7 +98,7 @@
 }
 
 .player-cuerpo h5 {
-  font-family: "Orbotron", Monospace;
+  font-family: var(--font-display);
   color: var(--color-accent-green);
   text-align: center;
   margin-bottom: 1rem;

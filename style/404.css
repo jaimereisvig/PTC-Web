@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
   line-height: 1.6;
@@ -51,7 +51,7 @@ main {
 }
 
 .error-code {
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--font-display);
   font-size: 4rem;
   color: var(--color-danger-red);
   margin-bottom: 1rem;
@@ -60,7 +60,7 @@ main {
 }
 
 .error-mensaje h2 {
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--font-display);
   font-size: var(--font-size-h2);
   color: var(--color-accent-gold);
   margin-bottom: 2rem;

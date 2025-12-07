@@ -1,4 +1,3 @@
-/* Estilos para la página de inicio */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 
 body {
   font-family: var(--font-primary);
-  background: var(--gradient-background);
+  background: linear-gradient(135deg, var(--color-background-primary) 0%, var(--color-background-secondary) 50%, var(--color-background-primary) 100%); 
   color: var(--color-text-primary);
   line-height: 1.6;
 }

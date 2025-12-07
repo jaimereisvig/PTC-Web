@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   background: linear-gradient(135deg, var(--color-background-primary) 0%, var(--color-background-secondary) 50%, var(--color-background-primary) 100%);
   color: var(--color-text-primary);
   line-height: 1.6;
@@ -19,7 +19,7 @@ body {
 }
 
 .page-header h1 {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   font-size: var(--font-size-h1); 
   font-weight: 900;
   color: var(--color-accent-gold); 
@@ -66,7 +66,7 @@ body {
 }
 
 .actor-info h2 {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   color: var(--color-accent-gold);
   font-size: var(--font-size-h3);
   margin-bottom: 0.5rem;

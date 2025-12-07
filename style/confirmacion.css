@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   background: linear-gradient(135deg, var(--color-background-primary) 0%, var(--color-background-secondary) 50%, var(--color-background-primary) 100%);
   color: var(--color-text-primary);
   line-height: 1.6;
@@ -53,7 +53,7 @@ main {
 }
 
 .confirmacion-contenido h1 {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   font-size: var(--font-size-h2);
   font-weight: 900;
   color: var(--color-accent-gold);
@@ -90,7 +90,7 @@ main {
 
 .btn-vol-inicio,
 .btn-vol-contacto {
-  font-family: "Orbitron", monospace;
+  font-family: var(--font-display);
   flex: 1;
   min-width: 200px;
   padding: 1rem 2rem;
