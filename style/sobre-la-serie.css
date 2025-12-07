@@ -15,7 +15,7 @@ body {
 .page-header {
   padding: 2rem 2rem 2rem;
   text-align: center;
-  background: rgba(26, 26, 46, 0.3);
+  background: var(--color-background-secondary);
 }
 
 .page-header h1 {
@@ -86,7 +86,7 @@ body {
 /* Sección contexto de producción */
 .produccion {
   padding: 3rem 0;
-  background: rgba(26, 26, 46, 0.2);
+  background: var(--color-background-card);
 }
 
 .produccion-info {

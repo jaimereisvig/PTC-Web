@@ -29,7 +29,7 @@ main {
 }
 
 .confirmacion-contenido {
-  background: rgba(26, 26, 46, 0.6);
+  background: var(--color-background-card);
   border: 1px solid var(--color-border-primary);
   border-radius: 20px;
   padding: 3rem;
@@ -113,7 +113,7 @@ main {
 }
 
 .btn-vol-contacto {
-  background: rgba(26, 26, 46, 0.6);
+  background: var(--color-background-secondary);
   border: 1px solid var(--color-accent-gold);
   color: var(--color-accent-gold);
 }

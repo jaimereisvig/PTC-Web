@@ -13,9 +13,9 @@ body {
 
 /* Header de página */
 .page-header {
-  padding: 3rem 2rem 2rem;
+  padding: 2rem 2rem 2rem;
   text-align: center;
-  background: rgba(26, 26, 46, 0.3); /* Mantengo este valor específico por opacidad única */
+  background: var(--color-background-secondary);
 }
 
 .page-header h1 {
