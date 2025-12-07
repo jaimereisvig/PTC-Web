@@ -1,22 +1,22 @@
 /* Header y navegación - reutilizable*/
 header {
-  background: rgba(10, 10, 15, 0.95);
+  background: var(--color-background-header);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #2a2a3e;
+  border-bottom: 1px solid var(--color-border-primary);
   position: sticky;
   z-index: 1000;
 }
 
 nav {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.logo img{
+.logo img {
   height: 3em;
   width: 10em;
   mask-image: radial-gradient(circle, black 1%, transparent 100%);
@@ -29,22 +29,22 @@ nav {
   list-style: none;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: flex-end; 
-  z-index: 1000; 
+  justify-content: flex-end;
+  z-index: 1000;
 }
 
 .nav-menu a {
-  color: #f0f0f5;
+  color: var(--color-text-primary);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color var(--transition-normal);
   position: relative;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
-  color: #d4af37;
+  color: var(--color-accent-gold);
 }
 
 .nav-menu a::after {
@@ -54,8 +54,8 @@ nav {
   left: 0;
   width: 0;
   height: 2px;
-  background: #d4af37;
-  transition: width 0.3s ease;
+  background: var(--color-accent-gold);
+  transition: width var(--transition-normal);
 }
 
 .nav-menu a:hover::after,
@@ -69,45 +69,45 @@ nav {
 
 /* Checkbox oculto que controla el menu */
 .menu-checkbox {
-    display: none;
+  display: none;
 }
 
 /* Boton hamburguesa (oculto en desktop) */
 .menu-hamburguesa {
-    display: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    z-index: 101;
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 101;
 }
 
 /* Icono hamburguesa - linea central */
 .icono-hamburguesa {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background: #d4af37;
-    position: relative;
-    transition: background 0.3s ease;
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--color-accent-gold);
+  position: relative;
+  transition: background var(--transition-normal);
 }
 
 /* Lineas superior e inferior del icono */
 .icono-hamburguesa::before,
 .icono-hamburguesa::after {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 3px;
-    background: #d4af37;
-    position: absolute;
-    transition: transform 0.3s ease;
+  content: "";
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--color-accent-gold);
+  position: absolute;
+  transition: transform var(--transition-normal);
 }
 
 .icono-hamburguesa::before {
-    top: -8px;
+  top: -8px;
 }
 
 .icono-hamburguesa::after {
-    top: 8px;
+  top: 8px;
 }
 
 /* -------------------------------------------- */
@@ -116,113 +116,113 @@ nav {
 
 /* --- TABLET (entre 769px y 1024px) --- */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    nav {
-        padding: 1rem 1.5rem;
-    }
+  nav {
+    padding: 1rem 1.5rem;
+  }
 
-    .nav-menu {
-        gap: 0.75rem; 
-    }
+  .nav-menu {
+    gap: 0.75rem;
+  }
 
-    .nav-menu a {
-        font-size: 0.85rem; 
-        padding: 0.4rem 0.5rem;
-    }
+  .nav-menu a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.5rem;
+  }
 
-    .logo img {
-        height: 2.5em;
-        width: 8em;
-    }
-    
-}/* --- CELULAR (768px o menos) --- */
+  .logo img {
+    height: 2.5em;
+    width: 8em;
+  }
+}
+/* --- CELULAR (768px o menos) --- */
 @media screen and (max-width: 768px) {
-    /* Contenedor nav como referencia para posicionamiento */
-    nav {
-        position: relative;
-        padding: 1rem 1.5rem; /* <CHANGE> mas padding lateral para separar de bordes */
-    }
-    
-    /* Mostrar boton hamburguesa */
-    .menu-hamburguesa {
-        display: block;
-    }
+  /* Contenedor nav como referencia para posicionamiento */
+  nav {
+    position: relative;
+    padding: 1rem 1.5rem;
+  }
 
-    /* Menu tipo dropdown */
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 1rem;
-        background: rgba(10, 10, 15, 0.98);
-        border: 1px solid #2a2a3e;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        min-width: 200px;
-        z-index: 100;
-    }
+  /* Mostrar boton hamburguesa */
+  .menu-hamburguesa {
+    display: block;
+  }
 
-    .nav-menu li {
-        border-bottom: 1px solid #2a2a3e;
-    }
+  /* Menu tipo dropdown */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background: var(--color-background-header);
+    border: 1px solid var(--color-border-primary);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--box-shadow-default);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    min-width: 200px;
+    z-index: 100;
+  }
 
-    /* Quitar borde del ultimo elemento */
-    .nav-menu li:last-child {
-        border-bottom: none;
-    }
+  .nav-menu li {
+    border-bottom: 1px solid var(--color-border-primary);
+  }
 
-    .nav-menu a {
-        display: block;
-        padding: 0.85rem 1.2rem;
-        text-align: left;
-    }
+  /* Quitar borde del ultimo elemento */
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
 
-    /* Quitar efecto de subrayado en movil */
-    .nav-menu a::after {
-        display: none;
-    }
+  .nav-menu a {
+    display: block;
+    padding: 0.85rem 1.2rem;
+    text-align: left;
+  }
 
-    /* Mostrar menu cuando checkbox esta marcado */
-    .menu-checkbox:checked ~ .nav-menu {
-        display: flex;
-    }
+  /* Quitar efecto de subrayado en movil */
+  .nav-menu a::after {
+    display: none;
+  }
 
-    /* Animar icono hamburguesa a X cuando menu esta abierto */
-    .menu-checkbox:checked ~ .menu-hamburguesa .icono-hamburguesa {
-        background: transparent;
-    }
+  /* Mostrar menu cuando checkbox esta marcado */
+  .menu-checkbox:checked ~ .nav-menu {
+    display: flex;
+  }
 
-    .menu-checkbox:checked ~ .menu-hamburguesa .icono-hamburguesa::before {
-        transform: rotate(45deg);
-        top: 0;
-    }
+  /* Animar icono hamburguesa a X cuando menu esta abierto */
+  .menu-checkbox:checked ~ .menu-hamburguesa .icono-hamburguesa {
+    background: transparent;
+  }
 
-    .menu-checkbox:checked ~ .menu-hamburguesa .icono-hamburguesa::after {
-        transform: rotate(-45deg);
-        top: 0;
-    }
+  .menu-checkbox:checked ~ .menu-hamburguesa .icono-hamburguesa::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .menu-checkbox:checked ~ .menu-hamburguesa .icono-hamburguesa::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
 }
 
 /* --- CELULAR PEQUENO (480px o menos) --- */
 @media screen and (max-width: 480px) {
-    nav {
-        padding: 0.75rem 1rem; /* <CHANGE> mantener padding lateral */
-    }
+  nav {
+    padding: 0.75rem 1rem;
+  }
 
-    .logo img {
-        height: 2em;
-        width: 6.5em;
-    }
+  .logo img {
+    height: 2em;
+    width: 6.5em;
+  }
 
-    .nav-menu {
-        right: 0.75rem;
-        min-width: 180px;
-    }
+  .nav-menu {
+    right: 0.75rem;
+    min-width: 180px;
+  }
 
-    .nav-menu a {
-        font-size: 0.9rem;
-        padding: 0.75rem 1rem;
-    }
+  .nav-menu a {
+    font-size: var(--font-size-small);
+    padding: 0.75rem 1rem;
+  }
 }

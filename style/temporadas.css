@@ -1,4 +1,3 @@
-/* Estilos para la página de Temporadas y Episodios */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +6,8 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0a0a0f 100%);
-  color: #f0f0f5;
+  background: linear-gradient(135deg, var(--color-background-primary) 0%, var(--color-background-secondary) 50%, var(--color-background-primary) 100%);
+  color: var(--color-text-primary);
   line-height: 1.6;
 }
 
@@ -21,10 +20,10 @@ body {
 
 .page-header h1 {
   font-family: "Orbitron", monospace;
-  font-size: 2.5rem;
+  font-size: var(--font-size-h1);
   font-weight: 900;
-  color: #d4af37;
-  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  color: var(--color-accent-gold);
+  text-shadow: 0 0 20px var(--color-gold-glow);
 }
 
 /* Contenido de temporadas */
@@ -41,28 +40,28 @@ body {
 .temporada-bloque {
   margin-bottom: 4rem;
   background: rgba(26, 26, 46, 0.3);
-  border-radius: 15px;
+  border-radius: var(--border-radius-large);
   overflow: hidden;
-  border: 1px solid #2a2a3e;
+  border: 1px solid var(--color-border-primary);
 }
 
 .temporada-header {
   background: rgba(212, 175, 55, 0.1);
   padding: 2rem;
-  border-bottom: 1px solid #2a2a3e;
+  border-bottom: 1px solid var(--color-border-primary);
   z-index: 10
 }
 
 .temporada-header h2 {
   font-family: "Orbitron", monospace;
-  color: #d4af37;
-  font-size: 2rem;
+  color: var(--color-accent-gold);
+  font-size: var(--font-size-h2);
   margin-bottom: 0.5rem;
 }
 
 .temporada-info {
-  color: #a0a0b0;
-  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-large);
 }
 
 /* Grid de episodios */
@@ -75,21 +74,21 @@ body {
 
 .episodio-card {
   background: rgba(10, 10, 15, 0.6);
-  border: 1px solid #2a2a3e;
-  border-radius: 10px;
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--border-radius-medium);
   padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .episodio-card h3 {
   font-family: "Orbitron", monospace;
-  color: #d4af37;
+  color: var(--color-accent-gold);
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
 .episodio-card p {
-  color: #d0d0d5;
+  color: var(--color-text-muted);
   line-height: 1.6;
   margin-bottom: 1rem;
   text-align: justify;
@@ -97,7 +96,7 @@ body {
 
 .episodio-link {
   display: inline-block;
-  color: #4ade80;
+  color: var(--color-accent-green-hover);
   text-decoration: none;
   font-weight: 600;
 }
@@ -115,8 +114,8 @@ body {
 }
 
 .contenido-futuro > p {
-  color: #d0d0d5;
-  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-large);
   line-height: 1.7;
   margin-bottom: 2rem;
   text-align: justify;
@@ -124,8 +123,8 @@ body {
 
 .temporada-highlights,
 .reparto-nuevo {
-  background: rgba(26, 26, 46, 0.4);
-  border-radius: 10px;
+  background: var(--color-background-card);
+  border-radius: var(--border-radius-medium);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -133,7 +132,7 @@ body {
 .temporada-highlights h3,
 .reparto-nuevo h3 {
   font-family: "Orbitron", monospace;
-  color: #4ade80;
+  color: var(--color-accent-green-hover);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -144,7 +143,7 @@ body {
 }
 
 .temporada-highlights li {
-  color: #d0d0d5;
+  color: var(--color-text-muted);
   padding: 0.5rem 0;
   border-bottom: 1px solid rgba(42, 42, 62, 0.5);
   position: relative;
@@ -153,7 +152,7 @@ body {
 
 .tempororada-highlights li:before {
   content: "→";
-  color: #4ade80;
+  color: var(--color-accent-green-hover);
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -164,12 +163,12 @@ body {
 }
 
 .reparto-nuevo p {
-  color: #d0d0d5;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
 .reparto-nuevo strong {
-  color: #d4af37;
+  color: var(--color-accent-gold);
 }
 
 /* -------------------------------------------- */

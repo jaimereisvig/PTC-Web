@@ -1,0 +1,64 @@
+/* --------------------------------------------------------
+   VARIABLES CSS GLOBALES - El Problema de los Tres Cuerpos
+   -------------------------------------------------------- */
+
+:root {
+  /* Colores principales */
+  --color-background-primary: #0a0a0f;
+  --color-background-secondary: #1a1a2e;
+  --color-background-card: rgba(26, 26, 46, 0.4);
+  --color-background-header: rgba(10, 10, 15, 0.95);
+  
+  /* Colores de texto */
+  --color-text-primary: #f0f0f5;
+  --color-text-secondary: #a0a0b0;
+  --color-text-muted: #d0d0d5;
+  
+  /* Colores de acento */
+  --color-accent-gold: #d4af37;
+  --color-accent-green: #22c55e;
+  --color-accent-green-hover: #4ade80;
+  --color-accent-silver: #c0c0c0;
+  --color-danger-red: #ff0033;
+  
+  /* Colores con transparencia */
+  --color-gold-glow: rgba(212, 175, 55, 0.3);
+  --color-gold-glow-strong: rgba(212, 175, 55, 0.8);
+  --color-shadow-dark: rgba(0, 0, 0, 0.5);
+  
+  /* Bordes */
+  --color-border-primary: #2a2a3e;
+  --color-border-gold: #d4af37;
+  
+  /* Tipografía */
+  --font-primary: "Inter", sans-serif;
+  --font-display: "Orbitron", monospace;
+  
+  /* Tamaños de fuente */
+  --font-size-small: 0.9rem;
+  --font-size-base: 1rem;
+  --font-size-large: 1.2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h1: 2.5rem;
+  --font-size-hero: 3rem;
+  
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Bordes y sombras */
+  --border-radius-small: 5px;
+  --border-radius-medium: 10px;
+  --border-radius-large: 15px;
+  --box-shadow-default: 0 4px 15px var(--color-shadow-dark);
+  --box-shadow-hover: 0 6px 20px rgba(81, 212, 55, 0.6);
+  
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}

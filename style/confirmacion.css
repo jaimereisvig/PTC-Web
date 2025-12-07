@@ -1,4 +1,3 @@
-/* Estilos para la página de Confirmación */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +6,8 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0a0a0f 100%);
-  color: #f0f0f5;
+  background: linear-gradient(135deg, var(--color-background-primary) 0%, var(--color-background-secondary) 50%, var(--color-background-primary) 100%);
+  color: var(--color-text-primary);
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -31,7 +30,7 @@ main {
 
 .confirmacion-contenido {
   background: rgba(26, 26, 46, 0.6);
-  border: 1px solid #2a2a3e;
+  border: 1px solid var(--color-border-primary);
   border-radius: 20px;
   padding: 3rem;
   text-align: center;
@@ -41,8 +40,8 @@ main {
 .hecho-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
-  color: #0a0a0f;
+  background: linear-gradient(135deg, var(--color-accent-green-hover), var(--color-accent-green));
+  color: var(--color-background-primary);
   font-size: 3rem;
   font-weight: 900;
   display: flex;
@@ -55,30 +54,30 @@ main {
 
 .confirmacion-contenido h1 {
   font-family: "Orbitron", monospace;
-  font-size: 2rem;
+  font-size: var(--font-size-h2);
   font-weight: 900;
-  color: #d4af37;
+  color: var(--color-accent-gold);
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  text-shadow: 0 0 20px var(--color-gold-glow);
 }
 
 .confirmacion-mensaje {
-  font-size: 1.1rem;
-  color: #d0d0d5;
+  font-size: var(--font-size-large);
+  color: var(--color-text-muted);
   line-height: 1.8;
   margin-bottom: 2rem;
 }
 
 .confirmacion-detalle {
   background: rgba(15, 23, 41, 0.4);
-  border: 1px solid #2a2a3e;
-  border-radius: 10px;
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--border-radius-medium);
   padding: 1.5rem;
   margin-bottom: 2.5rem;
 }
 
 .confirmacion-detalle p {
-  color: #c0c0c0;
+  color: var(--color-accent-silver);
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -98,14 +97,14 @@ main {
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
   display: inline-block;
   text-align: center;
 }
 
 .btn-vol-inicio {
-  background: linear-gradient(135deg, #d4af37, #c0a030);
-  color: #0a0a0f;
+  background: linear-gradient(135deg, var(--color-accent-gold), #c0a030);
+  color: var(--color-background-primary);
 }
 
 .btn-vol-inicio:hover {
@@ -115,8 +114,8 @@ main {
 
 .btn-vol-contacto {
   background: rgba(26, 26, 46, 0.6);
-  border: 1px solid #d4af37;
-  color: #d4af37;
+  border: 1px solid var(--color-accent-gold);
+  color: var(--color-accent-gold);
 }
 
 .btn-vol-contacto:hover {

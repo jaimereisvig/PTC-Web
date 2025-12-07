@@ -1,4 +1,3 @@
-/* Estilos para el reproductor de audio flotante */
 .player-toggle-checkbox {
   display: none;
 }
@@ -17,19 +16,19 @@
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(68, 212, 55, 0.4);
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal);
   z-index: 999;
   opacity: 1;
 }
 
 .player-icon:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(81, 212, 55, 0.6);
+  box-shadow: var(--box-shadow-hover);
 }
 
 .icon-music {
   font-size: 1.5rem;
-  color: #0a0a0f;
+  color: var(--color-background-primary);
   font-weight: bold;
 }
 
@@ -40,14 +39,14 @@
   right: 10%;
   width: 280px;
   background: rgba(15, 23, 41, 0.98);
-  border: 1px solid #d4af37;
-  border-radius: 10px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-accent-gold);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 8px 32px var(--color-shadow-dark);
   z-index: 1000;
   opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal);
 }
 
 /* Mostrar reproductor cuando el checkbox está marcado */
@@ -76,21 +75,21 @@
 
 .player-titulo {
   font-family: "Orbitron", monospace;
-  font-size: 0.9rem;
+  font-size: var(--font-size-small);
   font-weight: 600;
-  color: #d4af37;
+  color: var(--color-accent-gold);
 }
 
 .close-btn {
   font-size: 1.2rem;
-  color: #f0f0f5;
+  color: var(--color-text-primary);
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color var(--transition-normal);
   line-height: 1;
 }
 
 .close-btn:hover {
-  color: #d4af37;
+  color: var(--color-accent-gold);
 }
 
 /* Body del reproductor */
@@ -98,10 +97,9 @@
   padding: 1rem;
 }
 
-/* Selectores de track ocultos */
 .player-cuerpo h5 {
   font-family: "Orbotron", Monospace;
-  color: #00ff88;
+  color: var(--color-accent-green);
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -111,7 +109,7 @@
   width: 100%;
   height: 40px;
   margin-bottom: 0.75rem;
-  border-radius: 5px;
+  border-radius: var(--border-radius-small);
 }
 
 .audio-controles::-webkit-media-controls-panel {
@@ -120,6 +118,6 @@
 
 .audio-controles::-webkit-media-controls-play-button,
 .audio-controles::-webkit-media-controls-mute-button {
-  background-color: #d4af37;
+  background-color: var(--color-accent-gold);
   border-radius: 50%;
 }
