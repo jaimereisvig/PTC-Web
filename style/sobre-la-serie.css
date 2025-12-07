@@ -64,7 +64,7 @@ body {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 42.55%;
+  padding-top: 42.55%;
   height: 0;
   overflow: hidden;
   border-radius: var(--border-radius-medium);
@@ -73,9 +73,11 @@ body {
 }
 
 .video-container iframe {
-  position: absolute;
+ position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   border: none;
@@ -173,6 +175,7 @@ body {
 
     .video-container {
         max-width: 100%;
+        padding-top: 56.25%;
     }
 
     .ficha-cards {
