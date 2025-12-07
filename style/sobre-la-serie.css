@@ -18,7 +18,7 @@ body {
   background: rgba(26, 26, 46, 0.3);
 }
 
-.page-header h3 {
+.page-header h2 {
   font-family: var(--font-display);
   font-size: var(--font-size-h2); 
   font-weight: 700;

@@ -153,7 +153,7 @@ body {
 
 .curiosidades-card h3 {
   font-family: var(--font-display);
-  color: var(--color-accent-silver);
+  color: var(--color-accent-gold);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -166,14 +166,14 @@ body {
 
 .curiosidades-link {
   display: inline-block;
-  color: var(--color-accent-green-light);
+  color: var(--color-accent-green);
   text-decoration: none;
   font-weight: 600;
   transition: color var(--transition-normal);
 }
 
 .curiosidades-link:hover {
-  color: var(--color-accent-green);
+  color: var(--color-accent-green-hover);
   text-decoration: underline;
 }
 

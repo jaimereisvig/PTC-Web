@@ -132,7 +132,7 @@ body {
 .temporada-highlights h3,
 .reparto-nuevo h3 {
   font-family: var(--font-display);
-  color: var(--color-accent-green-hover);
+  color: var(--color-accent-gold);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
