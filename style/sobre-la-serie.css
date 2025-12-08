@@ -15,10 +15,10 @@ body {
 .page-header {
   padding: 2rem 2rem 2rem;
   text-align: center;
-  background: rgba(26, 26, 46, 0.3);
+  background: var(--color-background-secondary);
 }
 
-.page-header h2 {
+.page-header h1 {
   font-family: var(--font-display);
   font-size: var(--font-size-h2); 
   font-weight: 700;
@@ -86,7 +86,7 @@ body {
 /* Sección contexto de producción */
 .produccion {
   padding: 3rem 0;
-  background: rgba(26, 26, 46, 0.2);
+  background: var(--color-background-card);
 }
 
 .produccion-info {
@@ -155,7 +155,7 @@ body {
     }
 
     .page-header h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .bloque-cont {

@@ -13,9 +13,9 @@ body {
 
 /* Header de página */
 .page-header {
-  padding: 3rem 2rem 2rem;
+  padding: 2rem 2rem 2rem;
   text-align: center;
-  background: rgba(26, 26, 46, 0.3); /* Mantengo este valor específico por opacidad única */
+  background: var(--color-background-secondary);
 }
 
 .page-header h1 {
@@ -106,7 +106,7 @@ body {
     }
 
     .personaje-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: auto auto;
         gap: 1.5rem;
     }
 
@@ -141,13 +141,8 @@ body {
         padding: 0 1rem;
     }
 
-    .personaje-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
     .personaje-img {
-        height: 500px;
+        height: 300px;
     }
 
     .personaje-info {
@@ -176,6 +171,11 @@ body {
     .bloque-cont {
         padding: 0 0.75rem;
     }
+
+    .personaje-container {
+        grid-template-columns: auto;
+    }
+
 
     .personaje-img {
         height: 300px;

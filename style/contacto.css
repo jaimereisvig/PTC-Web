@@ -13,9 +13,9 @@ body {
 
 /* Header de página */
 .page-header {
-  padding: 3rem 2rem 2rem;
+  padding: 2rem 2rem 2rem;
   text-align: center;
-  background: rgba(26, 26, 46, 0.3);
+  background: var(--color-background-secondary);
 }
 
 .page-header h1 {
@@ -23,7 +23,6 @@ body {
   font-size: var(--font-size-h1);
   font-weight: 900;
   color: var(--color-accent-gold);
-  text-shadow: 0 0 20px var(--color-gold-glow);
 }
 
 /* Contenido de contacto */
@@ -41,7 +40,7 @@ body {
   text-align: center;
   margin-bottom: 4rem;
   padding: 2rem;
-  background: rgba(26, 26, 46, 0.3);
+  background: var(--color-background-secondary);
   border-radius: var(--border-radius-large);
   border: 1px solid var(--color-border-primary);
 }
@@ -63,11 +62,11 @@ body {
 
 /* Sección del formulario */
 
-.form-seccion h2,
-.social-seccion h2 {
+.form-seccion h2 {
+  text-align: center;
   font-family: var(--font-display);
   color: var(--color-accent-gold);
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h2);
   margin-bottom: 2rem;
 }
 
