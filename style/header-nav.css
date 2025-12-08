@@ -87,7 +87,7 @@ nav {
   height: 3px;
   background: var(--color-accent-gold);
   position: relative;
-  transition: background var(--transition-normal);
+  transition: background-color var(--transition-normal);
 }
 
 /* Lineas superior e inferior del icono */
@@ -114,7 +114,7 @@ nav {
 /*                 MEDIA QUERIES                */
 /* -------------------------------------------- */
 
-/* --- TABLET (entre 769px y 1024px) --- */
+/* --- TABLET (entre 769px y 1024px) --- 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   nav {
     padding: 1rem 1.5rem;
@@ -133,9 +133,11 @@ nav {
     height: 2.5em;
     width: 8em;
   }
-}
-/* --- CELULAR (768px o menos) --- */
-@media screen and (max-width: 768px) {
+}*/
+
+/* --- CELULAR Y TABLET EN LANDSCAPE (altura limitada) --- */
+@media screen and (max-width: 768px), screen and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  
   /* Contenedor nav como referencia para posicionamiento */
   nav {
     position: relative;
@@ -202,6 +204,26 @@ nav {
   .menu-checkbox:checked ~ .menu-hamburguesa .icono-hamburguesa::after {
     transform: rotate(-45deg);
     top: 0;
+  }
+
+  /* Ajustes específicos para tablet (769px - 1024px) dentro del menú hamburguesa */
+  @media screen and (min-width: 769px) {
+    nav {
+      padding: 1rem 1.5rem;
+    }
+
+    .logo img {
+      height: 2.5em;
+      width: 8em;
+    }
+
+    .nav-menu {
+      min-width: 220px;
+    }
+
+    .nav-menu a {
+      font-size: 0.9rem;
+    }
   }
 }
 
